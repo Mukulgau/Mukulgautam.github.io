@@ -7,6 +7,12 @@ const closeBtn = document.querySelector(".fa-xmark");
 const navBtn = document.querySelector(".nav-btn");
 const headerFixed = document.getElementById("header");
 
+const navItems = document.querySelectorAll(".nav-item");
+
+navItems.forEach((item) => {
+  item.addEventListener("click", closeList);
+});
+
 showBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
 
@@ -20,4 +26,8 @@ function closeMenu() {
   list.classList.toggle("show");
   navBtn.classList.toggle("show");
   headerFixed.classList.toggle("header_bg");
+}
+
+function closeList() {
+  list.classList.remove("show");
 }
