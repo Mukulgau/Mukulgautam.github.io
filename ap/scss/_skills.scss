@@ -1,0 +1,36 @@
+.skills_wrapper {
+  background-color: $wrapper;
+  margin: 100px 0;
+  padding: 70px;
+  color: $white;
+  border-radius: 10px;
+
+  .flex {
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+
+    .skill {
+      margin: 30px 20px;
+      text-align: center;
+
+      .image_wrap {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
