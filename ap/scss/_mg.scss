@@ -62,6 +62,7 @@
         .button {
           margin: 10px 0;
           .btn {
+            display: inline-block;
             padding: 10px 15px;
             margin: 5px 10px;
             border-radius: 10px;
@@ -78,6 +79,68 @@
 
             span {
               color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .portfolio_wrapper {
+    .portfolio_content {
+      height: 100%;
+      position: relative;
+      padding-top: 50px;
+
+      .row {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .img_wrapper {
+          height: 270px;
+          width: 280px;
+          flex: 40%;
+          text-align: center;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 7px;
+          }
+        }
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+          margin-left: 30px;
+
+          h1 {
+            font-size: 30px !important;
+            margin-bottom: 15px;
+            text-align: left;
+          }
+
+          .button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            .btn {
+              display: inline;
+              width: 240px;
+              text-align: center;
+              border: 1px solid $heading-color;
+              transition: all 0.3s ease-in-out;
             }
           }
         }
